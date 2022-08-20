@@ -47,7 +47,7 @@ if (!empty($_SESSION['active'])) {
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Vida Informatico</title>
+  <title>Sistema Pesquero</title>
 
   <!-- Custom fonts for this template-->
   <link rel="stylesheet" href="sistema/vendor/bootstrap/css/bootstrap.min.css">
@@ -69,7 +69,7 @@ if (!empty($_SESSION['active'])) {
             <!-- Nested Row within Card Body -->
             <div class="row">
               <div class="col-lg-6 d-none d-lg-block bg-login-image">
-                <img src="sistema/img/logo.jpg" class="img-thumbnail">
+                <img src="sistema/img/logo-pesquero.png" class="img-thumbnail">
               </div>
               <div class="col-lg-6">
                 <div class="p-5">

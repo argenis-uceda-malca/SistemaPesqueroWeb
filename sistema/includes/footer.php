@@ -3,7 +3,7 @@
   <div class="footer__block block no-margin-bottom">
     <div class="container-fluid text-center">
       <!-- Please do not remove the backlink to us unless you support us at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-      <p class="no-margin-bottom"><?php echo fechaPeru(); ?> &copy; Vida Informático <a href="https://angelsifuentes.com">Angel Sifuentes</a>.</p>
+      <p class="no-margin-bottom"><?php echo fechaPeru(); ?> &copy; Sistema Pesquero <a href="https://angelsifuentes.com">Argenis Uceda</a>.</p>
     </div>
   </div>
 </footer>
@@ -22,9 +22,34 @@
 <script src="js/sweetalert2@10.js"></script>
 <script type="text/javascript" src="js/producto.js"></script>
 <script type="text/javascript" src="js/all.min.js"></script>
+
+<script src='https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js'></script>
+<script src='https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js'></script>
+
+<script src='https://cdn.jsdelivr.net/npm/datatables-buttons-excel-styles@1.2.0/js/buttons.html5.styles.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/datatables-buttons-excel-styles@1.2.0/js/buttons.html5.styles.templates.min.js'></script>
+
+
 <script type="text/javascript">
   $(document).ready(function() {
     $('#table').DataTable({
+      dom: "Bfrtip",
+      buttons: {
+        dom: {
+          button: {
+            className: "btn"
+          }
+        },
+        buttons: [{
+          extend: "excel", // Extend the excel button
+          text: "Generar Excel",
+          className: "btn btn-outline-success ",
+          excelStyles: { // Add an excelStyles definition
+            template: "blue_medium", // Apply the 'blue_medium' template
+          },
+        }, ],
+      },
       language: {
         "decimal": "",
         "emptyTable": "No hay datos",

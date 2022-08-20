@@ -58,6 +58,8 @@ if ($result_data > 0) {
 	<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+	<!-- stilos para tabla y -->
+
 </head>
 
 <body>
@@ -75,7 +77,7 @@ if ($result_data > 0) {
 			<div class="container-fluid d-flex align-items-center justify-content-between">
 				<div class="navbar-header">
 					<!-- Navbar Header--><a href="index.php" class="navbar-brand">
-						<div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">Punto</strong><strong>Venta</strong></div>
+						<div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">Sistema</strong><strong>Pesquero</strong></div>
 						<div class="brand-text brand-sm"><strong class="text-primary">P</strong><strong>V</strong></div>
 					</a>
 					<!-- Sidebar Toggle Btn-->
@@ -94,7 +96,7 @@ if ($result_data > 0) {
 		<nav id="sidebar">
 			<!-- Sidebar Header-->
 			<div class="sidebar-header d-flex align-items-center">
-				<div class="avatar"><img src="img/logo.jpg" alt="..." class="img-fluid rounded-circle"></div>
+				<div class="avatar"><img src="img/logo-pesquero.png" alt="..." class="img-fluid rounded-circle"></div>
 				<div class="title">
 					<h1 class="h5"><?php echo $_SESSION['nombre']; ?></h1>
 					<p><?php if ($_SESSION['rol'] == 1) {
