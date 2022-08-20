@@ -56,9 +56,12 @@ if (empty($_REQUEST['cl']) || empty($_REQUEST['f'])) {
 		$pdf->Cell(20, 5, utf8_decode("-------------------"), 0, 0, 'L');
 		$pdf->Cell(25, 5, utf8_decode("-------------------"), 0, 1, 'L');
 	} else {
-		$pdf->Cell(40, 5, utf8_decode($result_cliente['nombre']), 0, 0, 'L');
+		/*$pdf->Cell(40, 5, utf8_decode($result_cliente['nombre']), 0, 0, 'L');
 		$pdf->Cell(20, 5, utf8_decode($result_cliente['telefono']), 0, 0, 'L');
-		$pdf->Cell(25, 5, utf8_decode($result_cliente['direccion']), 0, 1, 'L');
+		$pdf->Cell(25, 5, utf8_decode($result_cliente['direccion']), 0, 1, 'L');*/
+		$pdf->Cell(40, 5, utf8_decode("Argenis David Uceda"), 0, 0, 'L');
+		$pdf->Cell(20, 5, utf8_decode("944658054"), 0, 0, 'L');
+		$pdf->Cell(25, 5, utf8_decode("Mz v lt 20 barrio 2 Sector 1 Urb Pachacamac"), 0, 1, 'L');
 	}
 	$pdf->SetFont('Arial', 'B', 7);
 	$pdf->Cell(75, 5, "Detalle de Productos", 0, 1, 'L');

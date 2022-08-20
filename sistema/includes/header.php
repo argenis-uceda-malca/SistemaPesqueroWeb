@@ -78,7 +78,7 @@ if ($result_data > 0) {
 				<div class="navbar-header">
 					<!-- Navbar Header--><a href="index.php" class="navbar-brand">
 						<div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">Sistema</strong><strong>Pesquero</strong></div>
-						<div class="brand-text brand-sm"><strong class="text-primary">P</strong><strong>V</strong></div>
+						<div class="brand-text brand-sm"><strong class="text-primary">S</strong><strong>P</strong></div>
 					</a>
 					<!-- Sidebar Toggle Btn-->
 					<button class="sidebar-toggle"><i class="fas fa-bars"></i></button>

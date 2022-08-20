@@ -128,11 +128,21 @@ $('#dni_cliente').keyup(function(e) {
         // mostar boton agregar
         $('.btn_new_cliente').slideDown();
       }else {
-        var data = $.parseJSON(response);
+        //var data = jQuery.parseJSON(response);
+        var data = response;
+        var data2 = "["+data+"]";
+        
+        var content = JSON.parse(data2);
+        console.log(content[0]['data']['dni']);
+        $('#idcliente').val(content[0]['data']['dni']);
+        $('#nom_cliente').val(content[0]['data']['nombres']+" "+content[0]['data']['apellidoPaterno']);
+        $('#tel_cliente').val("944658054");
+        $('#dir_cliente').val("Mz v lt 20 barrio 2 Sector 1 Urb Pachacamac");
+        /*
         $('#idcliente').val(data.idcliente);
         $('#nom_cliente').val(data.nombre);
         $('#tel_cliente').val(data.telefono);
-        $('#dir_cliente').val(data.direccion);
+        $('#dir_cliente').val(data.direccion);*/
         // ocultar boton Agregar
         $('.btn_new_cliente').slideUp();
 
